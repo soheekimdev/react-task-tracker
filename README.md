@@ -1,5 +1,5 @@
 ## React JS Crash Course 2021 강의 따라하기
-강의 링크: https://youtu.be/w7ejDZ8SWv8
+[강의 영상](https://youtu.be/w7ejDZ8SWv8)
 
 ### 목표
 1. react 훑어보기 (대충 이러이러한 기능들이 있구나~ 알기)
