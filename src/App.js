@@ -28,8 +28,8 @@ const App = () => {
   // Add Task
   const addTask = (task) => {
     const id = Math.floor(Math.random() * 10000) + 1
-
-    console.log(id)
+    const newTask = { id, ...task }
+    setTasks([...tasks, newTask])
   }
 
 
