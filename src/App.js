@@ -21,10 +21,16 @@ const App = () => {
 
   // Fetch Tasks
   const fetchTasks = async () => {
-    const res = await fetch('http://localhost:5000/tasks')
-    const data = await res.json()
+    try {
+      const res = await fetch('http://localhost:5000/tasks')
+      const data = await res.json()
 
-    return data
+      return data
+    } catch (err) {
+      console.log('에러!', err)
+
+      return []
+    }
   }
 
   // Fetch Task
@@ -72,7 +78,7 @@ const App = () => {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json'
-      }, 
+      },
       body: JSON.stringify(updTask)
     })
 
